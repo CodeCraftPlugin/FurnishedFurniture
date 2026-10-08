@@ -18,6 +18,9 @@
 		"main": [
 			"me.codecraft.furnishedfurniture.FurnishedFurniture"
 		],
+		"client": [
+			"me.codecraft.furnishedfurniture.client.entity.FurnishedFurnitureClient"
+		],
 		"fabric-datagen": [
 			"me.codecraft.furnishedfurniture.FurnishedFurnitureDataGenerator"
 		]
