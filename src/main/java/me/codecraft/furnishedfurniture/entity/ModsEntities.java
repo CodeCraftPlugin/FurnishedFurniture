@@ -18,6 +18,10 @@ public class ModsEntities {
         return ResourceKey.create(Registries.ENTITY_TYPE, FurnishedFurniture.id(name));
     }
 
+    public static void init(){
+        FurnishedFurniture.LOGGER.info("Loaded Entities");
+    }
+
     public static final ResourceKey<EntityType<?>> CHAIR_ID = create("chair");
-    public static final EntityType<Chair> CHAIR = ModsEntities.register(ModsEntities.CHAIR_ID, EntityType.Builder.of(Chair::new, MobCategory.MISC).noLootTable().sized(1.0f, 0.25f).clientTrackingRange(10).updateInterval(Integer.MAX_VALUE).dontTrackDeltas());
+    public static final EntityType<Chair> CHAIR = ModsEntities.register(ModsEntities.CHAIR_ID, EntityType.Builder.of(Chair::new, MobCategory.MISC).noLootTable().sized(1.0f, 0.45f).clientTrackingRange(10).updateInterval(Integer.MAX_VALUE).dontTrackDeltas());
 }

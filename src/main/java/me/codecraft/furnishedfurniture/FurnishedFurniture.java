@@ -1,5 +1,6 @@
 package me.codecraft.furnishedfurniture;
 
+import me.codecraft.furnishedfurniture.entity.ModsEntities;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.resources.Identifier;
@@ -22,6 +23,7 @@ public class FurnishedFurniture implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
+		ModsEntities.init();
 	}
 
 	public static Identifier id(String path) {
